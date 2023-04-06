@@ -1,0 +1,105 @@
+
+body {
+    font-size: 100%;
+}
+
+#bg {
+    background-color: antiquewhite;
+    background-image: url(/img/spa_back1_small.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 1086px;
+}
+
+#main1 {
+    border-radius: 10px;
+}
+
+#bgLk {
+    background-color: antiquewhite;
+    background-image: url(/img/spa_back2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#logo {
+    font-family: 'Antic', sans-serif;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#menu, #wellcome {
+    font-family: 'Antic', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600; 
+}
+
+#backgrondText {
+    color: #dcc970;
+    font-style: italic;
+}
+
+#stockText {
+    color: #7fffd4;
+    font-weight: 500;
+}
+
+#diffTime {
+    text-transform: lowercase;
+    color: aquamarine;
+    font-size: 30px;
+}
+
+#birthDay {
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.4em;
+
+}
+
+/* TIMER */
+.timer__items {
+    display: flex;
+    font-size: 48px;
+    color: aquamarine;
+    margin-left: 130px ;
+ }
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+/* КОНЕЦ TIMER */
+
+@font-face {
+    font-family: "LotusEater"; 
+    src: url(/fonts/LotusEater_Personal_use.otf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
